@@ -30,7 +30,7 @@ public class LogonPage {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.id("user-name")).sendKeys(config.getProperty("Username"));
         driver.findElement(By.id("password")).sendKeys(config.getProperty("Password"));
-        driver.findElement(By.id("login-button")).click();
+        driver.findElement(By.id("login-button")).click();  
         driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
